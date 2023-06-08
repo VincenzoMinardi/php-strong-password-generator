@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="password-generator">
+    <form class="password-generator">
         <h2>Generatore di password</h2>
         <div class="form-group">
             <label for="length">Lunghezza della password:</label>
@@ -31,7 +31,7 @@
         </div>
         <button id="generate" class="btn btn-primary">Genera password</button>
         <div id="password" class="mt-3"></div>
-    </div>
+    </form>
 </body>
 
 </html>
