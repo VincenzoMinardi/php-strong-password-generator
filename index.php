@@ -9,17 +9,19 @@
 
 
 <body>
+    <?php include 'function.php' ?>
     <div class="password-generator">
-        <h2>Generatore di password</h2>
-        <form action="index.php" method="GET">
+        <form method="GET">
+            <h2>Generatore di Password</h2>
             <div class="form-group">
-                <label for="length">Lunghezza della password:</label>
-                <input type="number" id="length" name="length" class="form-control" min="4" max="20" value="">
+                <label for="length">Lunghezza della Password:</label>
+                <input type="number" class="form-control" name="length" min="6" max="20" value="10">
             </div>
-            <button type="submit" class="btn btn-primary">Genera password</button>
+            <button class="btn btn-primary btn-block">Genera Password</button>
+            <div class="password-output" id="password-output"></div>
+
+            <h1 class="password ml-2 mt-4"><?php echo $password ?></h1>
         </form>
-        <div class="generate-password ml-2"><?php echo $password ?></div>
-        <?php include 'function.php' ?>
     </div>
 
 
